@@ -1,32 +1,42 @@
 {
-  "name": "openapi-assignment",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@next/font": "^14.1.0",
-    "next": "14.0.4",
-    "papaparse": "^5.4.1",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-dropzone": "^14.2.3",
-    "react-spinners": "^0.13.8",
-    "tailwind-merge": "^2.2.1"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/papaparse": "^5.3.14",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
-  }
+    "name": "openapi-assignment",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "check-types": "tsc --pretty --noEmit",
+        "check-format": "prettier --check .",
+        "check-lint": "eslint . --ext ts --ext tsx --ext js",
+        "format": "prettier --write .",
+        "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build"
+    },
+    "dependencies": {
+        "@next/font": "^14.1.0",
+        "next": "14.0.4",
+        "papaparse": "^5.4.1",
+        "react": "^18",
+        "react-dom": "^18",
+        "react-dropzone": "^14.2.3",
+        "react-spinners": "^0.13.8",
+        "tailwind-merge": "^2.2.1"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/papaparse": "^5.3.14",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "@typescript-eslint/eslint-plugin": "^6.20.0",
+        "@typescript-eslint/parser": "^6.20.0",
+        "autoprefixer": "^10.0.1",
+        "eslint": "^8",
+        "eslint-config-next": "14.0.4",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-react": "^7.33.2",
+        "postcss": "^8",
+        "prettier": "3.2.4",
+        "tailwindcss": "^3.3.0",
+        "typescript": "^5"
+    }
 }

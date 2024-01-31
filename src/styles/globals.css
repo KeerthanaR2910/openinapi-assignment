@@ -4,24 +4,24 @@
 
 html,
 body,
-:root{
-  width: 100%;
-  height: 100%;
-  background-color: #FAFAFB ;
+:root {
+    width: 100%;
+    height: 100%;
+    background-color: #fafafb;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 td:first-child {
-  border-left-style:solid;
-  border-top-left-radius:11px;
-  border-bottom-left-radius:11px;
+    border-left-style: solid;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
 }
 
 td:last-child {
-  border-right-style:solid;
-  border-bottom-right-radius:11px;
-  border-top-right-radius:11px;
+    border-right-style: solid;
+    border-bottom-right-radius: 11px;
+    border-top-right-radius: 11px;
 }

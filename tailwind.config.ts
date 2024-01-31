@@ -1,37 +1,32 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    fontFamily: {
+    content: [
+        './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    ],
+    theme: {
+        fontFamily: {},
+        extend: {
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+            },
+            colors: {
+                blue: '#346BD4',
+                purple: '#605BFF',
+                'light-gray': '#9A9AA9',
+                'grayish-white': '#FAFAFB',
+                'darker-gray': '#F5F5F5',
+                red: '#D33030',
+                gray: '#999CA0',
+                'dark-white': '#F5F5F5',
+                'secondary-gray': '#858585',
+                'darker-white': '#F8FAFF',
+            },
+        },
     },
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-      colors:{
-        'blue':'#346BD4',
-        'purple':'#605BFF',
-        'light-gray': '#9A9AA9',
-        'grayish-white':'#FAFAFB',
-        'darker-gray':'#F5F5F5',
-        'red':'#D33030',
-        'gray':'#999CA0',
-        'dark-white': '#F5F5F5',
-        'secondary-gray':'#858585',
-        'darker-white':'#F8FAFF',
-      },
-    },
-  },
-  plugins: [],
+    plugins: [],
 }
 export default config
-
-
-

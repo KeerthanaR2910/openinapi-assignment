@@ -1,27 +1,26 @@
-import { useState } from "react"
-import DropDown from "./DropDown"
-import Tag from "./Tag"
+import { useState } from 'react'
+import DropDown from './DropDown'
+import Tag from './Tag'
 
 export type Row = {
-    "id": string,
-    "links":string,
-    'prefix': string,
-    'select tags':string,
+    id: string
+    links: string
+    prefix: string
+    'select tags': string
     'selected tags': string
 }
 
-
-const TableRow = ({value}:{value:Row}) => {
-    const [selectedTags, setSelectedTags] = useState<string[]>(value['selected tags'].split(","))
-    const [selectTags, setSelectTags] = useState<string[]>(value['select tags'].split(","))
+const TableRow = ({ value }: { value: Row }) => {
+    const [selectedTags, setSelectedTags] = useState<string[]>(value['selected tags'].split(','))
+    const [selectTags, setSelectTags] = useState<string[]>(value['select tags'].split(','))
     const onTagSelect = (tag: string) => {
-        setSelectedTags([...selectedTags,tag]);
-        setSelectTags(selectTags.filter((selectTag) => selectTag!==tag));
+        setSelectedTags([...selectedTags, tag])
+        setSelectTags(selectTags.filter((selectTag) => selectTag !== tag))
     }
 
     const removeSelectedTag = (tag: string) => {
-        setSelectTags([...selectTags,tag]);
-        setSelectedTags(selectedTags.filter((selectedTag) => selectedTag!==tag));
+        setSelectTags([...selectTags, tag])
+        setSelectedTags(selectedTags.filter((selectedTag) => selectedTag !== tag))
     }
     console.log(value)
     return (
@@ -36,15 +35,17 @@ const TableRow = ({value}:{value:Row}) => {
                 {value.prefix}
             </td>
             <td key="selectTags" className="text-black p-4 border-l-solid text-sm min-w-fit">
-                <DropDown options={selectTags} onSelect={onTagSelect}/>
+                <DropDown options={selectTags} onSelect={onTagSelect} />
             </td>
             <td key="selectedTags" className="text-black p-4 border-l-solid text-sm ">
                 <div className="flex gap-x-2 min-w-fit">
-                    {selectedTags.map((selectedTag) => <Tag key={selectedTag} label={selectedTag} onClose={removeSelectedTag}/>)}
+                    {selectedTags.map((selectedTag) => (
+                        <Tag key={selectedTag} label={selectedTag} onClose={removeSelectedTag} />
+                    ))}
                 </div>
             </td>
-    </tr>
+        </tr>
     )
-} 
+}
 
 export default TableRow
