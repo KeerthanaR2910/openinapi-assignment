@@ -1,13 +1,17 @@
-import MainContent from '@/components/MainContent'
-import Sidebar from '@/components/Sidebar'
-import { useState } from 'react'
+import LoginHeader from '@/components/LoginHeader'
+import LoginSidebar from '@/components/LoginSideBar'
+import SignInContainer from '@/components/SignInContainer'
 
-export default function Home() {
-    const [showSideBar, setShowSideBar] = useState(true)
+const Login = () => {
     return (
-        <div className="w-full h-full relative md:flex md:static">
-            <Sidebar show={showSideBar} onClose={() => setShowSideBar(false)} />
-            <MainContent onBurgerClick={() => setShowSideBar(!showSideBar)} />
+        <div className="w-full h-[100vh] flex flex-col md:flex-row bg-darker-white">
+            <div className="md:w-[50%] w-full">
+                <LoginSidebar />
+                <LoginHeader />
+            </div>
+            <SignInContainer />
         </div>
     )
 }
+
+export default Login
