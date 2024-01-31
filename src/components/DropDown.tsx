@@ -30,7 +30,7 @@ const DropDown = ({options, onSelect}: { options: string[]; onSelect: (tag: stri
                     {options.map((option, index) => (
                         <li
                             key={index}
-                            className="px-4 py-2 text-sm cursor-default select-none text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                            className="px-4 py-2 text-sm select-none text-gray-700 hover:bg-darker-gray cursor-pointer"
                             onClick={() => onSelect(option)}
                         >
                             {option}

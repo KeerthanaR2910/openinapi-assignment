@@ -34,7 +34,6 @@ const FileInput = ({ file, removeFile, onDrop: onFileDrop }: FileInputProps) => 
                     <p className=" text-light-gray text-base">{file?.name}</p>
                     <p
                         onClick={() => {
-                            console.log('jhsdhjbcdhbj')
                             onDrop(null)
                             removeFile()
                         }}

@@ -13,16 +13,16 @@ const UploadedContent = ({ data }: { data: Row[] }) => {
         return null
     }
     return (
-        <div className="w-full p-5 lg:p-25 flex flex-col gap-y-6 ">
+        <div className=" lg:p-24 w-full p-5 flex flex-col gap-y-6">
             {/* Figtree */}
             <span className=" text-2xl font-semibold text-black">Uploads</span>
-            <div className=" bg-darker-gray p-4 pt-0 pb-0 rounded-2xl overflow-auto">
+            <div className=" bg-darker-gray p-4 py-0 rounded-2xl overflow-auto">
                 <table className="w-screen lg:w-full table-auto border-separate border-spacing-y-4">
                     <thead className="text-left">
                         <tr>
                             {Object.values(rows).map((rows, index) => {
                                 return (
-                                    <th key={index} className="text-black p-4 min-w-fit">
+                                    <th key={index} className="text-black  px-4 py-2  min-w-fit">
                                         {rows}
                                     </th>
                                 )

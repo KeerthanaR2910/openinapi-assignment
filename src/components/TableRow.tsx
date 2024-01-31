@@ -22,22 +22,21 @@ const TableRow = ({ value }: { value: Row }) => {
         setSelectTags([...selectTags, tag])
         setSelectedTags(selectedTags.filter((selectedTag) => selectedTag !== tag))
     }
-    console.log(value)
     return (
         <tr className="bg-white">
-            <td key="id" className="text-black p-4 border-l-solid text-sm min-w-[100px]">
+            <td key="id" className="text-black px-4 py-2 text-sm min-w-[100px]">
                 {value.id}
             </td>
-            <td key="links" className="text-black p-4 border-l-solid text-sm min-w-fit">
+            <td key="links" className="text-black  px-4 py-2  text-sm min-w-fit">
                 {value.links}
             </td>
-            <td key="prefix" className="text-black p-4 border-l-solid text-sm min-w-fit">
+            <td key="prefix" className="text-black  px-4 py-2  text-sm min-w-fit">
                 {value.prefix}
             </td>
-            <td key="selectTags" className="text-black p-4 border-l-solid text-sm min-w-fit">
+            <td key="selectTags" className="text-black  px-4 py-2  text-sm min-w-fit">
                 <DropDown options={selectTags} onSelect={onTagSelect} />
             </td>
-            <td key="selectedTags" className="text-black p-4 border-l-solid text-sm ">
+            <td key="selectedTags" className="text-black  px-4 py-2  text-sm ">
                 <div className="flex gap-x-2 min-w-fit">
                     {selectedTags.map((selectedTag) => (
                         <Tag key={selectedTag} label={selectedTag} onClose={removeSelectedTag} />

@@ -8,7 +8,7 @@ const SignInForm = () => {
 
     const handleSubmit = (event: FormEvent) => {
         event.preventDefault()
-        router.push('/')
+        router.push('/update')
     }
 
     return (
@@ -16,6 +16,7 @@ const SignInForm = () => {
             <form className=" flex flex-col font-lato text-black justify-between gap-y-4 p-8" onSubmit={handleSubmit}>
                 <label>Email address</label>
                 <input
+                    required
                     type={'text'}
                     className="appearance-none bg-dark-white rounded-md h-[40px] p-2 focus:outline-none focus:outline-black"
                     value={email}
@@ -23,6 +24,7 @@ const SignInForm = () => {
                 />
                 <label>Password</label>
                 <input
+                    required
                     type={'password'}
                     className=" appearance-none bg-dark-white rounded-md h-[40px] p-2 focus:outline-none focus:outline-black"
                     value={password}
