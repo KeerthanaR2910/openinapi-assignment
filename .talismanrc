@@ -1,0 +1,10 @@
+fileignoreconfig:
+- filename: package-lock.json
+  checksum: 1bf86105c50d81b65c43e472baec0c79402a94c54e1967c338d192a38e26324f
+- filename: src/components/SignInForm.tsx
+  checksum: 61b1d3fc3d872530d31372d07d13e84be390e40f4217b6b9e5a358d026cc081f
+- filename: src/components/TableRow.tsx
+  checksum: 1a4bd12c5ee486c462b8a3f09e1fd46406743f3e857a5d6c2034aed731d0b4b2
+- filename: src/components/UploadedContent.tsx
+  checksum: bc6c48b117d0ce5c076d0fe3a668880c965c878997a8a277f3d2f3176c66dc46
+version: "1.0"
