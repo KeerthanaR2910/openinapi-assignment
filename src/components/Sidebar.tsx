@@ -8,7 +8,7 @@ const Sidebar = ({ show, onClose }: { show?: boolean; onClose: () => void }) => 
     return (
         <div
             className={twMerge(
-                'w-full md:w-[25%] lg:w-[15%] h-[100vh] bg-white absolute md:static rounded-r-3xl md:rounded-none overflow-hidden',
+                'w-full md:w-[25%] lg:w-[18%] h-[100vh] bg-white absolute md:static rounded-r-3xl md:rounded-none overflow-hidden',
                 !show && 'hidden md:block'
             )}
         >
