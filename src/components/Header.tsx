@@ -22,7 +22,7 @@ const Header = ({ onBurgerClick}: HeaderProps) => {
                 </span>
                 <div className="flex items-center gap-x-7">
                     <Bell />
-                    <Image src={profile} width={30} height={30} className={"rounded-full object-cover h-[30px] w-[30px]"}/>
+                    <Image alt="profile-pic" src={profile} width={30} height={30} className={"rounded-full object-cover h-[30px] w-[30px]"}/>
                 </div>
             </div>
         </div>

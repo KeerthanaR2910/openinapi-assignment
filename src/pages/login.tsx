@@ -1,6 +1,6 @@
 import LoginHeader from "@/components/LoginHeader";
 import LoginSidebar from "@/components/LoginSideBar";
-import SignInContainer from "@/components/SigninContainer";
+import SignInContainer from "@/components/SignInContainer";
 
 const Login = () => {
     return  <div className="w-full h-[100vh] flex flex-col md:flex-row bg-darker-white">
