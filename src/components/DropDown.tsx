@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import {useState} from 'react'
 
-const DropDown = ({ options, onSelect }: { options: string[]; onSelect: (tag: string) => void }) => {
+const DropDown = ({options, onSelect}: { options: string[]; onSelect: (tag: string) => void }) => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
@@ -18,11 +18,11 @@ const DropDown = ({ options, onSelect }: { options: string[]; onSelect: (tag: st
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                 >
-                    <path d="m6 9 6 6 6-6" />
+                    <path d="m6 9 6 6 6-6"/>
                 </svg>
             </button>
             {isOpen && (

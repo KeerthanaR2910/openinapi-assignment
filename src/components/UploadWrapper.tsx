@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import UploadContainer from './UploadContainer'
 import UploadedContent from './UploadedContent'
-import Papa from 'papaparse'
+import Papa, {ParseResult} from 'papaparse'
 import { Row } from './TableRow'
 
 export type UploadButtonState = 'initial' | 'loading' | 'disabled'
@@ -16,8 +16,7 @@ const UploadWrapper = () => {
             Papa.parse<Row>(file, {
                 header: true,
                 skipEmptyLines: true,
-                complete: function (results: any) {
-                    console.log(results.data)
+                complete: function (results: ParseResult<Row>) {
                     setParsedData(results.data)
                 },
             })

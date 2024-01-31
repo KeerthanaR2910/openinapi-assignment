@@ -15,7 +15,7 @@ const SignInContainer = () => {
                 </div>
                 <SignInForm />
                 <div className=" flex flex-col md:flex-row justify-center gap-2 items-center">
-                    <p className=" text-secondary-gray font-lato">Don't have an account?</p>
+                    <p className=" text-secondary-gray font-lato">{`Don't have an account?`}</p>
                     <p className=" text-blue font-lato">Register here</p>
                 </div>
             </div>

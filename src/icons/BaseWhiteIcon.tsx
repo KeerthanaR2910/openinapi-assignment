@@ -16,7 +16,7 @@ const BaseWhiteIcon = () => {
                 <path
                     d="M2.02979 11.0531L32.0871 25.7478L58.8048 3.70578L84.8545 17.0646"
                     stroke="#605BFF"
-                    stroke-width="6"
+                    strokeWidth="6"
                 />
             </svg>
         </div>

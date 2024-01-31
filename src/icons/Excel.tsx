@@ -1,7 +1,7 @@
 const Excel = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
-            <g clip-path="url(#clip0_22_2725)">
+            <g clipPath="url(#clip0_22_2725)">
                 <path
                     d="M18.7801 13.2998L6.95557 11.1998V26.7167C6.95557 27.4253 7.52638 27.9998 8.23053 27.9998H28.6341C29.3382 27.9998 29.9091 27.4253 29.9091 26.7167V20.9998L18.7801 13.2998Z"
                     fill="#185C37"
@@ -51,9 +51,9 @@ const Excel = () => {
                     y2="22.6473"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#18884F" />
-                    <stop offset="0.5" stop-color="#117E43" />
-                    <stop offset="1" stop-color="#0B6631" />
+                    <stop stopColor="#18884F" />
+                    <stop offset="0.5" stopColor="#117E43" />
+                    <stop offset="1" stopColor="#0B6631" />
                 </linearGradient>
                 <clipPath id="clip0_22_2725">
                     <rect width="29.9091" height="28" fill="white" />
